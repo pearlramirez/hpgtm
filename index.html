@@ -40,7 +40,6 @@
   @keyframes rise{to{opacity:1; transform:none;}}
   .d1{animation-delay:.05s}.d2{animation-delay:.13s}.d3{animation-delay:.21s}.d4{animation-delay:.29s}.d5{animation-delay:.37s}
 
-  /* hero */
   .hero{padding:74px 0 40px;}
   .kicker{font-family:var(--artifact-mono); font-size:11.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--artifact-accent); margin:0 0 20px;}
   h1{font-family:var(--artifact-serif); font-size:clamp(30px,4.6vw,48px); line-height:1.1; font-weight:600; letter-spacing:-.015em; margin:0 0 20px; max-width:19ch;}
@@ -48,7 +47,6 @@
   .attrib{font-size:13px; color:var(--artifact-text-soft); border-top:1px solid var(--artifact-border); padding-top:16px; display:flex; flex-wrap:wrap; gap:6px 18px;}
   .attrib b{color:var(--artifact-text); font-weight:600;}
 
-  /* stat band */
   .stats{display:grid; grid-template-columns:repeat(4,1fr); gap:0; margin:8px 0 4px; border:1px solid var(--artifact-border); border-radius:14px; overflow:hidden; background:var(--artifact-surface); box-shadow:var(--artifact-card-shadow);}
   @media(max-width:760px){.stats{grid-template-columns:repeat(2,1fr);}}
   .stat{padding:22px 22px;}
@@ -62,12 +60,10 @@
   .sec-label::before{content:""; width:26px; height:2px; background:var(--artifact-rule);}
   h2{font-family:var(--artifact-serif); font-size:clamp(22px,3vw,30px); font-weight:600; letter-spacing:-.015em; margin:0 0 14px;}
 
-  /* through-line */
   .throughline{background:var(--artifact-surface); border:1px solid var(--artifact-border); border-radius:18px; padding:34px 36px; box-shadow:var(--artifact-card-shadow);}
   .throughline p{font-size:16px; color:var(--artifact-text-soft); max-width:720px; margin:0 0 16px;}
   .quote{font-family:var(--artifact-serif); border-left:3px solid var(--artifact-rule); padding:6px 0 6px 20px; margin:22px 0; font-size:19px; font-style:italic; color:var(--artifact-text); max-width:680px; line-height:1.45;}
 
-  /* pillars */
   .pillar{background:var(--artifact-surface); border:1px solid var(--artifact-border); border-radius:18px; margin-bottom:20px; box-shadow:var(--artifact-card-shadow); overflow:hidden;}
   .pillar-top{display:flex; align-items:flex-start; gap:20px; padding:26px 32px 20px;}
   .pnum{flex:0 0 auto; width:48px; height:48px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-family:var(--artifact-serif); font-weight:600; font-size:22px; color:var(--artifact-accent); background:var(--artifact-accent-soft); border:1px solid var(--artifact-border);}
@@ -89,22 +85,21 @@
   a.story:hover{transform:translateY(-2px); box-shadow:var(--artifact-card-shadow); border-color:var(--artifact-rule);}
   .stop{display:flex; align-items:baseline; justify-content:space-between; gap:10px; margin-bottom:5px;}
   .sname{font-weight:640; font-size:15px;}
-  .smetric{font-family:var(--artifact-mono); font-size:12px; font-weight:600; color:var(--artifact-accent); white-space:nowrap;}
+  .smetric{font-family:var(--artifact-mono); font-size:12px; font-weight:600; color:var(--artifact-accent); white-space:nowrap; display:inline-flex; align-items:center; gap:6px;}
   .sdesc{font-size:13.5px; color:var(--artifact-text-soft); margin:0 0 8px;}
   .slink{font-size:12.5px; font-weight:600; color:var(--artifact-accent); display:inline-flex; align-items:center; gap:5px;}
   .slink::after{content:"→"; transition:transform .16s ease;}
   a.story:hover .slink::after{transform:translateX(3px);}
 
-  /* how glean helps HP */
   .help{background:var(--artifact-surface); border:1px solid var(--artifact-border); border-radius:18px; padding:32px 36px; box-shadow:var(--artifact-card-shadow);}
   .help p.lead{font-size:16px; color:var(--artifact-text-soft); max-width:740px; margin:0 0 20px;}
 
-  /* close */
   .close{background:var(--artifact-accent-soft); border:1px solid var(--artifact-border); border-radius:18px; padding:30px 36px; text-align:center;}
   .close h2{margin-bottom:10px;}
   .close p{font-size:15.5px; color:var(--artifact-text-soft); max-width:620px; margin:0 auto;}
 
   .foot{font-size:12.5px; color:var(--artifact-text-soft); padding:24px 0 60px; border-top:1px solid var(--artifact-border); margin-top:8px; text-align:center;}
+  .no-data{padding:80px 20px; text-align:center; color:var(--artifact-text-soft); font-size:16px;}
 
   @media print{
     body{margin:0; padding:0.4in 0.55in; background:#fff; print-color-adjust:exact; -webkit-print-color-adjust:exact;}
@@ -117,177 +112,77 @@
     *,*::before,*::after{animation:none!important; transition:none!important;}
   }
 </style>
+<script>
+  window.APP_DATA = {"metadata": {"title": "HP GTM AI Vision × Glean", "generated_at": "2026-08-13T19:12:06.041603+00:00"}, "hero": {"kicker": "Prepared for HP · Graphic Solutions Business", "title": "Turning HP's GTM AI vision into outcomes", "lede": "Following our July 14 conversation, here is how Glean's Work AI platform can support the four priorities behind HP's go-to-market transformation, acting as the connected context layer that ties your tools, data, and agents together across funnel, productivity, net-new, and lead-to-cash.", "attrib": ["Prepared for <b>Khalil Eid</b>, Global AI GTM Strategy &amp; Transformation", "From the Glean team · <b>Gautam Batta</b> &amp; <b>Pearl Ramirez</b>"]}, "stats": [{"n": "$3B → $5B", "l": "GSB's revenue ambition over the coming years"}, {"n": "40–45%", "l": "of rep time spent today on non-sales work"}, {"n": "~800–1k", "l": "people across the global GTM organization"}, {"n": "$1.9B", "l": "HP's stated AI-related cost-savings goal"}], "throughline": {"label": "The idea that ties it together", "title": "One connected context layer, not another point tool", "p1": "You described the vision as a spider rather than a single direction: an orchestrator that brings many solutions together and draws insight from each. That is exactly the role Glean plays. It connects to the systems and data you already have, builds one shared layer of enterprise context on top, and lets your teams and agents work from a single source of trusted answers.", "quote": "\"This orchestrator should be able to integrate with other solutions that give me other insights or capabilities. It's like a spider, not one direction.\"", "p2": "It also keeps HP's options open. Glean is model-neutral, so your teams can use the best model for each task, from OpenAI and Anthropic to open-source and Glean's own, all grounded in the same secure, permission-aware context rather than locked to any single provider."}, "pillars": [{"num": "1", "title": "Funnel &amp; Install Base Management", "goal": "Predictive, proactive AI to manage the funnel and install base and grow revenue.", "how": ["<b>Unifies the account picture.</b> Glean connects your CRM, support, and product-usage data into one enterprise knowledge graph, so every account and open opportunity shows a complete, current view.", "<b>Works proactively.</b> Agents run on a schedule to flag at-risk accounts, renewal timing, and expansion signals, then draft the next action instead of waiting for someone to pull a report.", "<b>Sits on top of your Databricks build.</b> Glean can serve as the context and retrieval layer for the model you are developing, so its answers come from trusted, permissioned data across every system."], "id": "funnel", "stories": [{"name": "Databricks", "url": "https://www.glean.com/resources/customer-stories/databricks", "metric": "Search that works", "desc": "Databricks unified search across tools so employees could find relevant information faster."}]}, {"num": "2", "title": "Sales Productivity", "goal": "Give reps back the 40&ndash;45% of time lost to claims, CRM, quotes, contracts, billing, and invoicing.", "how": ["<b>Automates the admin around selling.</b> From a single prompt, Glean updates CRM records, drafts follow-ups and QBR prep, and answers claim, quote, and contract questions.", "<b>Ends the tool-switching.</b> It retrieves answers across Salesforce, ServiceNow, and Zendesk in one place, so reps stop piecing context together by hand.", "<b>Writes in the rep's voice.</b> Glean learns each person's style and drafts outreach and documents that are ready to send, not just starting points."], "id": "productivity", "stories": [{"name": "Dell Technologies", "url": "https://moorinsightsstrategy.com/the-six-five/powering-the-future-of-work-dell-tech-gleans-ai-collaboration-six-five-on-the-road/", "metric": "GTM-wide rollout", "desc": "Dell deployed Glean across marketing and sales so sellers spend time selling, not hunting for content."}, {"name": "Motive", "url": "https://www.glean.com/resources/customer-stories/motive", "metric": "75% less time on account plans", "desc": "Motive's GTM team uses a Glean agent to build strategic account plans from CRM, news, and Slack."}]}, {"num": "3", "title": "Net New Business", "goal": "Close blind spots and lift the share of net-new customers through sharper outreach and SDR motion.", "how": ["<b>Speeds prospect research.</b> Glean pulls public and internal signals into one brief, so SDRs prep an account in minutes instead of hours.", "<b>Drafts outreach that lands.</b> It writes personalized messages grounded in the account's context and the rep's voice, ready to review and send.", "<b>Ramps new reps and complements your stack.</b> Playbooks, cases, and objection handling are one question away, and Glean feeds enriched context into outreach tools rather than replacing them."], "id": "newbiz", "stories": [{"name": "TIME", "url": "https://www.glean.com/resources/customer-stories/time", "metric": "Up and running in 3 weeks", "desc": "TIME indexed over 100 years of articles and accelerated sales and editorial research with Glean."}]}, {"num": "4", "title": "Lead-to-Cash Processes", "goal": "Bring old, unconnected quote, contract, and billing systems into one connected flow, the pillar you're still shaping.", "how": ["<b>Answers invoice and PO questions across systems.</b> Ask for every invoice tied to a purchase order and get one clean table pulled live from your billing and ERP records, so finance stops exporting and reconciling by hand and can skip a separate point tool.", "<b>Standardizes contracts and surfaces risk.</b> Glean reads across your quote and contract repositories to check terms against your standards, flag non-standard clauses and pricing, and pull the exact language a rep or approver needs in the moment.", "<b>Automates the billing handoffs that break today.</b> Agents reconcile order-to-invoice status, draft quote and contract summaries, calculate and check billing details, and route the exceptions, each step following the user's access.", "<b>Lets you start now, decide later.</b> Because Glean is a layer on top rather than a replacement, HP can capture value across these disconnected systems while the longer-term lead-to-cash architecture is still being chosen, and the same context also strengthens the other three pillars."], "id": "lead2cash", "stories": [{"name": "Confluent", "url": "https://www.glean.com/resources/customer-stories/confluent", "metric": "15k+ hours saved monthly", "desc": "Confluent uses Glean to help employees find information across 20+ systems."}]}], "help": {"label": "How we'd approach it with HP", "lead": "Across all four priorities, Glean is the connected context layer that makes your existing tools and any models you build work better together, rather than one more system to buy and integrate.", "bullets": ["<b>Start where value comes fastest.</b> Lead-to-cash is the most open area, and Glean can add value across those disconnected systems right away without a rip-and-replace.", "<b>Build alongside, not against.</b> On funnel and install-base management, Glean sits on top of your Databricks work as the context and orchestration layer.", "<b>One secure layer across everything.</b> Glean connects your structured and unstructured data and follows each person's permissions down to the document, so answers are both complete and safe.", "<b>Freedom to choose the best model.</b> Your teams use the right model for each task, grounded in one enterprise context, keeping HP flexible as the technology evolves."]}, "close": {"title": "Let's take a closer look together", "body": "A short working session to map your environment would show exactly where Glean fits across these four priorities. We'd also love to have you join Glean:GO on August 26–27, in person in San Francisco or virtually, to see how leaders like Dell and Databricks are transforming their go-to-market with Glean."}, "footer": "Glean · Work AI for all. Customer stories at glean.com/resources/customer-stories"};
+</script>
 </head>
 <body>
-
-<!-- HERO -->
-<div class="hero" data-glean-id="hero">
-  <div class="wrap">
-    <p class="kicker rv d1">Prepared for HP · Graphic Solutions Business</p>
-    <h1 class="rv d2" data-glean-id="page-title">Turning HP's GTM AI vision into outcomes</h1>
-    <p class="sub rv d3" data-glean-id="lede">Following our July 14 conversation, here is how Glean's Work AI platform can support the four priorities behind HP's go-to-market transformation, acting as the connected context layer that ties your tools, data, and agents together across funnel, productivity, net-new, and lead-to-cash.</p>
-    <div class="attrib rv d4" data-glean-id="attrib">
-      <span>Prepared for <b>Khalil Eid</b>, Global AI GTM Strategy &amp; Transformation</span>
-      <span>From the Glean team · <b>Gautam Batta</b> &amp; <b>Pearl Ramirez</b></span>
-    </div>
-  </div>
-</div>
-
-<div class="wrap">
-
-  <!-- STAT BAND -->
-  <div class="stats rv d5" data-glean-id="stats">
-    <div class="stat" data-glean-id="stat-revenue"><div class="n">$3B → $5B</div><div class="l">GSB's revenue ambition over the coming years</div></div>
-    <div class="stat" data-glean-id="stat-nonsales"><div class="n">40–45%</div><div class="l">of rep time spent today on non-sales work</div></div>
-    <div class="stat" data-glean-id="stat-org"><div class="n">~800–1k</div><div class="l">people across the global GTM organization</div></div>
-    <div class="stat" data-glean-id="stat-savings"><div class="n">$1.9B</div><div class="l">HP's stated AI-related cost-savings goal</div></div>
-  </div>
-
-  <!-- THROUGH-LINE -->
-  <section data-glean-id="section-throughline">
-    <div class="sec-label">The idea that ties it together</div>
-    <div class="throughline">
-      <h2 data-glean-id="throughline-title">One connected context layer, not another point tool</h2>
-      <p>You described the vision as a spider rather than a single direction: an orchestrator that brings many solutions together and draws insight from each. That is exactly the role Glean plays. It connects to the systems and data you already have, builds one shared layer of enterprise context on top, and lets your teams and agents work from a single source of trusted answers.</p>
-      <div class="quote" data-glean-id="throughline-quote">"This orchestrator should be able to integrate with other solutions that give me other insights or capabilities. It's like a spider, not one direction."</div>
-      <p>It also keeps HP's options open. Glean is model-neutral, so your teams can use the best model for each task, from OpenAI and Anthropic to open-source and Glean's own, all grounded in the same secure, permission-aware context rather than locked to any single provider.</p>
-    </div>
-  </section>
-
-  <!-- PILLARS -->
-  <section data-glean-id="section-pillars">
-    <div class="sec-label">Your four priorities, and how Glean helps</div>
-
-    <!-- P1 -->
-    <div class="pillar" data-glean-id="pillar-funnel">
-      <div class="pillar-top">
-        <div class="pnum">1</div>
-        <div><div class="ptitle">Funnel &amp; Install Base Management</div><p class="pgoal">Predictive, proactive AI to manage the funnel and install base and grow revenue.</p></div>
-      </div>
-      <div class="pbody">
-        <div class="pcol">
-          <p class="colhead">How Glean does it</p>
-          <ul class="gl">
-            <li><b>Unifies the account picture.</b> Glean connects your CRM, support, and product-usage data into one enterprise knowledge graph, so every account and open opportunity shows a complete, current view.</li>
-            <li><b>Works proactively.</b> Agents run on a schedule to flag at-risk accounts, renewal timing, and expansion signals, then draft the next action instead of waiting for someone to pull a report.</li>
-            <li><b>Sits on top of your Databricks build.</b> Glean can serve as the context and retrieval layer for the model you are developing, so its answers come from trusted, permissioned data across every system.</li>
-          </ul>
-        </div>
-        <div class="pcol">
-          <p class="colhead">See it in action</p>
-          <div class="stories">
-            <a class="story" href="https://www.glean.com/de/resources/customer-stories/deutsche-telekom" target="_blank" rel="noopener" data-glean-id="story-dt"><div class="stop"><span class="sname">Deutsche Telekom</span><span class="smetric">Answers in seconds</span></div><p class="sdesc">Built AskT, an AI concierge that helps employees across a huge base find answers instantly.</p><span class="slink">Read the story</span></a>
-            <a class="story" href="https://www.glean.com/resources/customer-stories/databricks" target="_blank" rel="noopener" data-glean-id="story-databricks"><div class="stop"><span class="sname">Databricks</span><span class="smetric">Unified search</span></div><p class="sdesc">Transformed internal search so teams surface relevant context and act faster.</p><span class="slink">Read the story</span></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- P2 -->
-    <div class="pillar" data-glean-id="pillar-productivity">
-      <div class="pillar-top">
-        <div class="pnum">2</div>
-        <div><div class="ptitle">Sales Productivity</div><p class="pgoal">Give reps back the 40–45% of time lost to claims, CRM, quotes, contracts, billing, and invoicing.</p></div>
-      </div>
-      <div class="pbody">
-        <div class="pcol">
-          <p class="colhead">How Glean does it</p>
-          <ul class="gl">
-            <li><b>Automates the admin around selling.</b> From a single prompt, Glean updates CRM records, drafts follow-ups and QBR prep, and answers claim, quote, and contract questions.</li>
-            <li><b>Ends the tool-switching.</b> It retrieves answers across Salesforce, ServiceNow, and Zendesk in one place, so reps stop piecing context together by hand.</li>
-            <li><b>Writes in the rep's voice.</b> Glean learns each person's style and drafts outreach and documents that are ready to send, not just starting points.</li>
-          </ul>
-        </div>
-        <div class="pcol">
-          <p class="colhead">See it in action</p>
-          <div class="stories">
-            <a class="story" href="https://www.glean.com/resources/customer-stories/wealthsimple" target="_blank" rel="noopener" data-glean-id="story-wealthsimple"><div class="stop"><span class="sname">Wealthsimple</span><span class="smetric">$1M+ saved/yr</span></div><p class="sdesc">Cut wasted time and frustration by making company knowledge instantly findable.</p><span class="slink">Read the story</span></a>
-            <a class="story" href="https://www.glean.com/resources/customer-stories/duolingo" target="_blank" rel="noopener" data-glean-id="story-duolingo"><div class="stop"><span class="sname">Duolingo</span><span class="smetric">5x ROI · 500+ hrs/mo</span></div><p class="sdesc">Saves 500+ hours a month and reduced duplicated work across teams.</p><span class="slink">Read the story</span></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- P3 -->
-    <div class="pillar" data-glean-id="pillar-newbiz">
-      <div class="pillar-top">
-        <div class="pnum">3</div>
-        <div><div class="ptitle">Net New Business</div><p class="pgoal">Close blind spots and lift the share of net-new customers through sharper outreach and SDR motion.</p></div>
-      </div>
-      <div class="pbody">
-        <div class="pcol">
-          <p class="colhead">How Glean does it</p>
-          <ul class="gl">
-            <li><b>Speeds prospect research.</b> Glean pulls public and internal signals into one brief, so SDRs prep an account in minutes instead of hours.</li>
-            <li><b>Drafts outreach that lands.</b> It writes personalized messages grounded in the account's context and the rep's voice, ready to review and send.</li>
-            <li><b>Ramps new reps and complements your stack.</b> Playbooks, cases, and objection handling are one question away, and Glean feeds enriched context into outreach tools rather than replacing them.</li>
-          </ul>
-        </div>
-        <div class="pcol">
-          <p class="colhead">See it in action</p>
-          <div class="stories">
-            <a class="story" href="https://www.glean.com/resources/customer-stories/time" target="_blank" rel="noopener" data-glean-id="story-time"><div class="stop"><span class="sname">TIME</span><span class="smetric">Faster sales &amp; research</span></div><p class="sdesc">Made 100 years of archives instantly searchable, accelerating sales and research.</p><span class="slink">Read the story</span></a>
-            <a class="story" href="https://www.glean.com/resources/customer-stories/purestorage" target="_blank" rel="noopener" data-glean-id="story-purestorage"><div class="stop"><span class="sname">Pure Storage</span><span class="smetric">+39 pt satisfaction</span></div><p class="sdesc">Accelerated everyday workflows and lifted employee satisfaction by 39 points.</p><span class="slink">Read the story</span></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- P4 -->
-    <div class="pillar" data-glean-id="pillar-lead2cash">
-      <div class="pillar-top">
-        <div class="pnum">4</div>
-        <div><div class="ptitle">Lead-to-Cash Processes</div><p class="pgoal">Bring old, unconnected quote, contract, and billing systems into one connected flow, the pillar you're still shaping.</p></div>
-      </div>
-      <div class="pbody">
-        <div class="pcol">
-          <p class="colhead">How Glean does it</p>
-          <ul class="gl">
-            <li><b>Connects the systems you already run.</b> Through prebuilt and custom connectors, Glean indexes both the structured records and the unstructured documents in your quote, contract, ERP, and billing systems, with no migration or rip-and-replace.</li>
-            <li><b>Creates one view across the disconnect.</b> A person or an agent can ask a single question that spans quote to order to contract to invoice and get one trusted, permission-aware answer, instead of chasing it across systems.</li>
-            <li><b>Automates the handoffs that break today.</b> Agents retrieve order and billing status, draft quotes and contract summaries, flag pricing or terms discrepancies, and route exceptions, each step respecting the user's access.</li>
-            <li><b>Lets you start now, decide later.</b> Because Glean is a layer on top rather than a replacement, HP can capture value while the longer-term lead-to-cash architecture is still being chosen, and the same context also strengthens the other three pillars.</li>
-          </ul>
-        </div>
-        <div class="pcol">
-          <p class="colhead">See it in action</p>
-          <div class="stories">
-            <a class="story" href="https://www.glean.com/resources/customer-stories/confluent" target="_blank" rel="noopener" data-glean-id="story-confluent"><div class="stop"><span class="sname">Confluent</span><span class="smetric">15k+ hrs/mo saved</span></div><p class="sdesc">Knowledge scattered across 20+ systems, unified with Glean and 13% higher support satisfaction.</p><span class="slink">Read the story</span></a>
-            <a class="story" href="https://www.glean.com/resources/customer-stories/grammarly" target="_blank" rel="noopener" data-glean-id="story-grammarly"><div class="stop"><span class="sname">Grammarly</span><span class="smetric">Cross-system answers</span></div><p class="sdesc">Finds answers instantly across Confluence, Slack, Zendesk, and Google Drive.</p><span class="slink">Read the story</span></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW GLEAN WOULD HELP HP -->
-  <section data-glean-id="section-help">
-    <div class="sec-label">How we'd approach it with HP</div>
-    <div class="help">
-      <p class="lead">Across all four priorities, Glean is the connected context layer that makes your existing tools and any models you build work better together, rather than one more system to buy and integrate.</p>
-      <ul class="gl">
-        <li><b>Start where value comes fastest.</b> Lead-to-cash is the most open area, and Glean can add value across those disconnected systems right away without a rip-and-replace.</li>
-        <li><b>Build alongside, not against.</b> On funnel and install-base management, Glean sits on top of your Databricks work as the context and orchestration layer.</li>
-        <li><b>One secure layer across everything.</b> Glean connects your structured and unstructured data and follows each person's permissions down to the document, so answers are both complete and safe.</li>
-        <li><b>Freedom to choose the best model.</b> Your teams use the right model for each task, grounded in one enterprise context, keeping HP flexible as the technology evolves.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- CLOSE -->
-  <section data-glean-id="section-close">
-    <div class="close">
-      <h2>Let's take a closer look together</h2>
-      <p>A short working session to map your environment would show exactly where Glean fits across these four priorities. We'd also love to have you join Glean:GO on August 26–27, in person in San Francisco or virtually, to see how leaders like Dell and Databricks are transforming their go-to-market with Glean.</p>
-    </div>
-  </section>
-
-  <p class="foot" data-glean-id="footer">Glean · Work AI for all. Customer stories at glean.com/resources/customer-stories</p>
-</div>
+<div id="app"></div>
 
 <script>
-  window.GleanBridge.postMessage({ actionId:'export-pdf', type:'glean-add-menu', metadata:{ label:'Export as PDF', icon:'export' }});
-  window.GleanBridge.onMessage('action', function(data){ if(data.actionId==='export-pdf') window.print(); });
+  function esc(s){ return (s==null?'':String(s)); }
+
+  function renderApp(d){
+    var pillars = (d.pillars||[]).map(function(p){
+      var how = (p.how||[]).map(function(h){ return '<li>'+h+'</li>'; }).join('');
+      var stories = (p.stories||[]).map(function(s){
+        return '<a class="story" href="'+esc(s.url)+'" target="_blank" rel="noopener">'
+          + '<div class="stop"><span class="sname">'+esc(s.name)+'</span>'
+          + '<span class="smetric">'+esc(s.metric)
+          + ' <button class="glean-citation" data-citation="customer_proof" aria-label="Show source" onclick="event.preventDefault();event.stopPropagation();">i</button>'
+          + '</span></div>'
+          + '<p class="sdesc">'+esc(s.desc)+'</p>'
+          + '<span class="slink">Read the story</span></a>';
+      }).join('');
+      return '<div class="pillar">'
+        + '<div class="pillar-top"><div class="pnum">'+esc(p.num)+'</div>'
+        + '<div><div class="ptitle">'+esc(p.title)+'</div><p class="pgoal">'+esc(p.goal)+'</p></div></div>'
+        + '<div class="pbody"><div class="pcol"><p class="colhead">How Glean does it</p><ul class="gl">'+how+'</ul></div>'
+        + '<div class="pcol"><p class="colhead">See it in action</p><div class="stories">'+stories+'</div></div></div>'
+        + '</div>';
+    }).join('');
+
+    var stats = (d.stats||[]).map(function(s){
+      return '<div class="stat"><div class="n">'+esc(s.n)+'</div><div class="l">'+esc(s.l)+'</div></div>';
+    }).join('');
+
+    var attrib = (d.hero.attrib||[]).map(function(a){ return '<span>'+a+'</span>'; }).join('');
+    var helpBullets = (d.help.bullets||[]).map(function(b){ return '<li>'+b+'</li>'; }).join('');
+
+    var html = ''
+      + '<div class="hero"><div class="wrap">'
+      + '<p class="kicker rv d1">'+esc(d.hero.kicker)+'</p>'
+      + '<h1 class="rv d2">'+esc(d.hero.title)+'</h1>'
+      + '<p class="sub rv d3">'+esc(d.hero.lede)+'</p>'
+      + '<div class="attrib rv d4">'+attrib+'</div>'
+      + '</div></div>'
+      + '<div class="wrap">'
+      + '<div class="stats rv d5">'+stats+'</div>'
+      + '<section><div class="sec-label">'+esc(d.throughline.label)+'</div>'
+      + '<div class="throughline"><h2>'+esc(d.throughline.title)+'</h2>'
+      + '<p>'+esc(d.throughline.p1)+'</p>'
+      + '<div class="quote">'+esc(d.throughline.quote)+'</div>'
+      + '<p>'+esc(d.throughline.p2)+'</p></div></section>'
+      + '<section><div class="sec-label">Your four priorities, and how Glean helps</div>'+pillars+'</section>'
+      + '<section><div class="sec-label">'+esc(d.help.label)+'</div>'
+      + '<div class="help"><p class="lead">'+esc(d.help.lead)+'</p><ul class="gl">'+helpBullets+'</ul></div></section>'
+      + '<section><div class="close"><h2>'+esc(d.close.title)+'</h2><p>'+esc(d.close.body)+'</p></div></section>'
+      + '<p class="foot">'+esc(d.footer)+'</p>'
+      + '</div>';
+    document.getElementById('app').innerHTML = html;
+  }
+
+  document.addEventListener('DOMContentLoaded', function(){
+    if(!window.APP_DATA || window.APP_DATA.error){
+      document.getElementById('app').innerHTML = '<div class="no-data">Data unavailable.</div>';
+      return;
+    }
+    renderApp(window.APP_DATA);
+    try{
+      window.GleanBridge.postMessage({ actionId:'export-pdf', type:'glean-add-menu', metadata:{ label:'Export as PDF', icon:'export' }});
+      window.GleanBridge.onMessage('action', function(data){ if(data.actionId==='export-pdf') window.print(); });
+    }catch(e){}
+  });
 </script>
 </body>
 </html>
